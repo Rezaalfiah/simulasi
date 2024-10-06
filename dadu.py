@@ -12,20 +12,20 @@ if angka <= 0:
     quit()
 
 # Simpan hasil lemparan
-putaran = []
+lemparan = []
 for i in range(jmlh_lemparan):
     face = random.randint(1, angka)
-    putaran.append(face)
+    lemparan.append(face)
 
 # Tampilkan hasil lemparan
-print("Hasil lemparan:", putaran)
+print("Hasil lemparan:", lemparan)
 
 # Hitung berapa kali setiap angka muncul
 frekuensi = {}
 for i in range(1, angka + 1):
     frekuensi[i] = 0  # Set awal jumlah kemunculan tiap angka jadi 0
 
-for hasil in putaran:
+for hasil in lemparan:
     frekuensi[hasil] += 1  # Tambah 1 setiap kali angka muncul
 
 # Hitung persentase kemunculan tiap angka
